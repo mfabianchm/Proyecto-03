@@ -1,3 +1,41 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
+nav {
+  background-color: #616161;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 70px;
+  height: 50px;
+}
+nav .nav-text {
+  width: 70%;
+  padding-left: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: #F5F5F5;
+  font-weight: bold;
+}
+
+.inicio {
+  background-color: #1976D2;
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  align-items: center;
+}
+.inicio img {
+  width: 35%;
+  height: 500px;
+  padding-right: 100px;
+}
 
 /*# sourceMappingURL=main.css.map */

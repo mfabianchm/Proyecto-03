@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'mixins';
+ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+nav {
+    background-color: $secondary-color;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+    
+
+  
+  
+}
+
+
+nav {
+  img {
+    width: 70px;
+    height: 50px; 
+  }
+  .nav-text {
+      width: 70%;
+      padding-left: 60px;
+      display: flex;
+      justify-content: space-around;
+     
+  }
+
+  a{
+      text-decoration: none;
+      color: $text-color;
+      font-weight: bold;
+      
+  }
+}
+
+
+.inicio {
+    @include secciones;
+    height: 700px;
+    align-items: center;
+
+    img{
+      
+      width: 35%;
+      height: 500px;
+      padding-right: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
