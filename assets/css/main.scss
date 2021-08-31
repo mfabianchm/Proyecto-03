@@ -33,6 +33,7 @@ nav {
       padding-left: 60px;
       display: flex;
       justify-content: space-around;
+
      
   }
 
@@ -56,10 +57,214 @@ nav {
       height: 500px;
       padding-right: 100px;
     }
+
+    p {
+      @include parrafo;
+      font-size: 40px;
+      font-weight: bolder;
+    }
 }
 
 
 
+.sobre-mi {
+
+  @include secciones($color: #303F9F);
+    height: 700px;
+    align-items: center;
+
+  img {
+    width: 50%;
+    height: 500px;
+    padding-left: 100px;
+  }
+
+  p {
+    @include parrafo;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+}
+
+
+.experiencia {
+  @include secciones($color: #9E9E9E);
+  height: 800px;
+  align-items: center;
+
+  iframe {
+    height: 400px;
+    width: 40%;
+    padding-left: 50px;
+  }
+
+  .text-exp {
+    width: 50%;
+    height: 80%;
+    padding-left: 60px;
+    
+
+    h1 {
+      padding-bottom: 40px;
+      color: $text-color;
+      font-size: 50px;
+    }
+
+    p {
+      
+      color: $text-color;
+      padding-bottom: 80px;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      line-height: 1.5;
+      
+
+    }
+
+  
+  }
+}
+
+
+
+.header-planes {
+  height: 100px;
+  background-color: #03A9F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.planes {
+  @include secciontab;
+}
+
+
+
+.tabla1 {
+  @include tablas;
+  .header {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+
+.tabla2 {
+  @include tablas;
+  .header {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+
+.tabla3 {
+  @include tablas;
+  .header {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+.contact-header {
+  height: 100px;
+  background-color: #303F9F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+
+.contacto {
+  background-color: $secondary-color;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+
+  div {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+   input {
+     width: 30%;
+     margin-left: 30px;
+     height: 30px;
+     border-radius: 10px;
+     border: none;
+     
+   }
+
+  
+}
 
 
 

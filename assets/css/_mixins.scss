@@ -1,8 +1,95 @@
-@mixin secciones {
-    background-color: #1976D2;
+@mixin secciones($color: #1976D2){
+    background-color: $color;
     display: flex;
     flex-direction: row;
 
 
     
+}
+
+
+
+@mixin parrafo {
+
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #F5F5F5;
+    text-align: justify;
+    
+}
+
+
+@mixin secciontab {
+
+    display: flex;
+    align-items: center;
+    background-color: #1976D2;
+    height: 700px;
+    justify-content: space-around;
+
+   
+    
+}
+
+
+@mixin tablas {
+    background-color: #303F9F;
+    border: 5px white solid;
+    border-radius: 10px;
+    
+    
+}
+
+
+@mixin numtabla {
+    border-bottom: 2px solid white;
+    
+    
+}
+
+@mixin tabheader {
+
+    color: white;
+    text-align: center;
+    background-color: #FFA000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+
+
+
+}
+
+@mixin tabfeaturesp {
+     height: 60px;
+      border-bottom: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+    
+
+
+@mixin tabprecio {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+@mixin tabpreciobutton {
+       background-color: #FFA000;
+       padding: 20px 40px 20px;
+       border-radius: 20px;
+       color: white;
+       font-size: 20px;
+       border: none;
+
 }
