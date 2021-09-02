@@ -7,6 +7,9 @@ nav {
   flex-direction: row;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
 }
 
 nav img {
@@ -323,6 +326,294 @@ nav a {
 }
 .datos .cuadro-pag {
   padding-bottom: 20px;
+}
+
+@media (min-width: 950px) and (max-width: 1024px) {
+  .sobre-mi img {
+    height: 400px;
+    width: 40%;
+  }
+
+  .experiencia iframe {
+    height: 300px;
+  }
+  .experiencia .text-exp {
+    padding-right: 20px;
+  }
+  .experiencia .text-exp p {
+    font-size: 17px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 800px) and (max-width: 950px) {
+  .inicio p {
+    font-size: 30px;
+  }
+  .inicio img {
+    width: 40%;
+    height: 400px;
+  }
+
+  .sobre-mi img {
+    height: 250px;
+    width: 40%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .experiencia iframe {
+    height: 200px;
+  }
+  .experiencia .text-exp {
+    padding-right: 20px;
+  }
+  .experiencia .text-exp p {
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 520px) and (max-width: 800px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .inicio p {
+    font-size: 30px;
+  }
+  .inicio img {
+    width: 50%;
+    height: 60%;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .sobre-mi img {
+    height: 250px;
+    width: 50%;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+
+  .experiencia {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 1000px;
+  }
+  .experiencia iframe {
+    height: 300px;
+    padding-bottom: 30px;
+    width: 70%;
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .experiencia .text-exp {
+    width: 70%;
+    padding-left: 0px;
+    height: 70%;
+  }
+  .experiencia .text-exp p {
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .experiencia .text-exp h1 {
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  .planes {
+    flex-direction: column;
+    display: flex;
+    height: 1500px;
+  }
+
+  .contacto .email-tel input {
+    width: 100%;
+  }
+
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+  }
+}
+@media (min-width: 520px) and (max-width: 650px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
+  }
+
+  .nav-text {
+    margin-left: -20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 520px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+  }
+
+  .nav-text {
+    flex-direction: column;
+    text-align: center;
+    padding-right: 60px;
+    justify-content: space-around;
+    display: flex;
+    height: 70%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .nav-text a {
+    border-bottom: 3px solid white;
+  }
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .inicio p {
+    font-size: 30px;
+  }
+  .inicio img {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 1100px;
+  }
+  .sobre-mi img {
+    height: 250px;
+    width: 80%;
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .experiencia {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 1200px;
+  }
+  .experiencia iframe {
+    height: 20%;
+    padding-bottom: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .experiencia .text-exp {
+    width: 70%;
+    padding-left: 0px;
+    height: 70%;
+  }
+  .experiencia .text-exp p {
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .experiencia .text-exp h1 {
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .planes {
+    flex-direction: column;
+    display: flex;
+    height: 1500px;
+  }
+
+  .contacto .email-tel {
+    width: 90%;
+  }
+  .contacto .email-tel input {
+    width: 100%;
+  }
+
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+  }
+}
+@media (min-width: 320px) and (max-width: 435px) {
+  .planes .tabla1 {
+    width: 70%;
+    height: 25%;
+  }
+  .planes .tabla1 .caracteristicas {
+    text-align: center;
+  }
+  .planes .tabla1 .precio {
+    padding-bottom: 0px;
+  }
+  .planes .tabla1 .precio button {
+    height: 70%;
+    width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .planes .tabla2 {
+    width: 70%;
+    height: 25%;
+  }
+  .planes .tabla2 .caracteristicas {
+    text-align: center;
+  }
+  .planes .tabla2 .precio {
+    padding-bottom: 0px;
+  }
+  .planes .tabla2 .precio button {
+    height: 70%;
+    width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .planes .tabla3 {
+    width: 70%;
+    height: 25%;
+  }
+  .planes .tabla3 .caracteristicas {
+    text-align: center;
+  }
+  .planes .tabla3 .precio {
+    padding-bottom: 0px;
+  }
+  .planes .tabla3 .precio button {
+    height: 70%;
+    width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
