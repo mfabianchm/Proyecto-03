@@ -16,7 +16,7 @@ nav img {
   width: 70px;
   height: 50px;
 }
-nav .nav-text {
+nav .nav-texto {
   width: 70%;
   padding-left: 60px;
   display: flex;
@@ -82,17 +82,17 @@ nav a {
   width: 40%;
   padding-left: 50px;
 }
-.experiencia .text-exp {
+.experiencia .texto-exp {
   width: 50%;
   height: 80%;
   padding-left: 60px;
 }
-.experiencia .text-exp h1 {
+.experiencia .texto-exp h1 {
   padding-bottom: 40px;
   color: #F5F5F5;
   font-size: 50px;
 }
-.experiencia .text-exp p {
+.experiencia .texto-exp p {
   color: #F5F5F5;
   padding-bottom: 80px;
   font-size: 20px;
@@ -101,7 +101,7 @@ nav a {
   line-height: 1.5;
 }
 
-.header-planes {
+.titulo-planesyprecios {
   height: 100px;
   background-color: #03A9F4;
   display: flex;
@@ -109,9 +109,10 @@ nav a {
   align-items: center;
   color: #FFFFFF;
   font-size: 40px;
+  margin: 0px;
 }
 
-.planes {
+.contenedor-planes {
   display: flex;
   align-items: center;
   background-color: #1976D2;
@@ -124,7 +125,7 @@ nav a {
   border: 5px white solid;
   border-radius: 10px;
 }
-.tabla1 .header {
+.tabla1 .plan-tipo {
   color: white;
   text-align: center;
   background-color: #FFA000;
@@ -168,7 +169,7 @@ nav a {
   border: 5px white solid;
   border-radius: 10px;
 }
-.tabla2 .header {
+.tabla2 .plan-tipo {
   color: white;
   text-align: center;
   background-color: #FFA000;
@@ -212,7 +213,7 @@ nav a {
   border: 5px white solid;
   border-radius: 10px;
 }
-.tabla3 .header {
+.tabla3 .plan-tipo {
   color: white;
   text-align: center;
   background-color: #FFA000;
@@ -251,7 +252,7 @@ nav a {
   border: none;
 }
 
-.contact-header {
+.titulo-contacto {
   height: 100px;
   background-color: #303F9F;
   display: flex;
@@ -259,16 +260,17 @@ nav a {
   align-items: center;
   color: #FFFFFF;
   font-size: 35px;
+  margin: 0px;
 }
 
-.contacto {
+.contenedor-email-tel {
   background-color: #616161;
   height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.contacto .email-tel {
+.contenedor-email-tel .email-tel {
   background-color: #616161;
   height: 400px;
   display: flex;
@@ -276,12 +278,12 @@ nav a {
   justify-content: space-around;
   width: 60%;
 }
-.contacto div {
+.contenedor-email-tel div {
   color: #FFFFFF;
   font-size: 30px;
   text-align: center;
 }
-.contacto input {
+.contenedor-email-tel input {
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -289,42 +291,42 @@ nav a {
   align-self: center;
 }
 
-.datos {
+.datos-contacto {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   height: 200px;
 }
-.datos .cuadro-1 {
+.datos-contacto .cuadro-1 {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   height: 100px;
 }
-.datos .cuadro-1 img {
+.datos-contacto .cuadro-1 img {
   height: 40px;
   width: 50px;
   margin: 0 auto;
 }
-.datos .cuadro-1 .facebook {
+.datos-contacto .cuadro-1 .facebook {
   height: 40px;
   width: 70px;
 }
-.datos .cuadro-1 p {
+.datos-contacto .cuadro-1 p {
   font-weight: bold;
 }
-.datos .cuadro-1 a {
+.datos-contacto .cuadro-1 a {
   font-weight: bold;
   text-decoration: none;
   display: block;
   color: black;
 }
-.datos .cuadro-1 .pagina {
+.datos-contacto .cuadro-1 .pagina {
   padding-bottom: 20px;
 }
-.datos .cuadro-pag {
+.datos-contacto .cuadro-pag {
   padding-bottom: 20px;
 }
 
@@ -337,10 +339,10 @@ nav a {
   .experiencia iframe {
     height: 300px;
   }
-  .experiencia .text-exp {
+  .experiencia .texto-exp {
     padding-right: 20px;
   }
-  .experiencia .text-exp p {
+  .experiencia .texto-exp p {
     font-size: 17px;
     text-align: justify;
     padding-right: 20px;
@@ -367,10 +369,10 @@ nav a {
   .experiencia iframe {
     height: 200px;
   }
-  .experiencia .text-exp {
+  .experiencia .texto-exp {
     padding-right: 20px;
   }
-  .experiencia .text-exp p {
+  .experiencia .texto-exp p {
     font-size: 14px;
     text-align: justify;
     padding-right: 20px;
@@ -417,33 +419,33 @@ nav a {
     margin-bottom: 40px;
     padding-left: 0px;
   }
-  .experiencia .text-exp {
+  .experiencia .texto-exp {
     width: 70%;
     padding-left: 0px;
     height: 70%;
   }
-  .experiencia .text-exp p {
+  .experiencia .texto-exp p {
     font-size: 16px;
     text-align: justify;
     padding-bottom: 0px;
     padding-right: 0px;
   }
-  .experiencia .text-exp h1 {
+  .experiencia .texto-exp h1 {
     padding-bottom: 0px;
     text-align: center;
   }
 
-  .planes {
+  .contenedor-planes {
     flex-direction: column;
     display: flex;
     height: 1500px;
   }
 
-  .contacto .email-tel input {
+  .contenedor-email-tel .email-tel input {
     width: 100%;
   }
 
-  .datos {
+  .datos-contacto {
     display: flex;
     flex-wrap: wrap;
     height: 450px;
@@ -457,7 +459,7 @@ nav a {
     position: relative;
   }
 
-  .nav-text {
+  .nav-texto {
     margin-left: -20px;
   }
 }
@@ -469,7 +471,7 @@ nav a {
     position: relative;
   }
 
-  .nav-text {
+  .nav-texto {
     flex-direction: column;
     text-align: center;
     padding-right: 60px;
@@ -480,7 +482,7 @@ nav a {
     font-size: 20px;
     font-weight: bold;
   }
-  .nav-text a {
+  .nav-texto a {
     border-bottom: 3px solid white;
   }
 
@@ -526,88 +528,88 @@ nav a {
     margin-bottom: 40px;
     padding-left: 0px;
   }
-  .experiencia .text-exp {
+  .experiencia .texto-exp {
     width: 70%;
     padding-left: 0px;
     height: 70%;
   }
-  .experiencia .text-exp p {
+  .experiencia .texto-exp p {
     font-size: 16px;
     text-align: justify;
     padding-bottom: 0px;
     padding-right: 0px;
   }
-  .experiencia .text-exp h1 {
+  .experiencia .texto-exp h1 {
     padding-bottom: 0px;
     text-align: center;
     font-size: 35px;
   }
 
-  .planes {
+  .contenedor-planes {
     flex-direction: column;
     display: flex;
     height: 1500px;
   }
 
-  .contacto .email-tel {
+  .contenedor-email-tel .email-tel {
     width: 90%;
   }
-  .contacto .email-tel input {
+  .contenedor-email-tel .email-tel input {
     width: 100%;
   }
 
-  .datos {
+  .datos-contacto {
     display: flex;
     flex-wrap: wrap;
     height: 450px;
   }
 }
 @media (min-width: 320px) and (max-width: 435px) {
-  .planes .tabla1 {
+  .contenedor-planes .tabla1 {
     width: 70%;
     height: 25%;
   }
-  .planes .tabla1 .caracteristicas {
+  .contenedor-planes .tabla1 .caracteristicas {
     text-align: center;
   }
-  .planes .tabla1 .precio {
+  .contenedor-planes .tabla1 .precio {
     padding-bottom: 0px;
   }
-  .planes .tabla1 .precio button {
+  .contenedor-planes .tabla1 .precio button {
     height: 70%;
     width: 60%;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
   }
-  .planes .tabla2 {
+  .contenedor-planes .tabla2 {
     width: 70%;
     height: 25%;
   }
-  .planes .tabla2 .caracteristicas {
+  .contenedor-planes .tabla2 .caracteristicas {
     text-align: center;
   }
-  .planes .tabla2 .precio {
+  .contenedor-planes .tabla2 .precio {
     padding-bottom: 0px;
   }
-  .planes .tabla2 .precio button {
+  .contenedor-planes .tabla2 .precio button {
     height: 70%;
     width: 60%;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
   }
-  .planes .tabla3 {
+  .contenedor-planes .tabla3 {
     width: 70%;
     height: 25%;
   }
-  .planes .tabla3 .caracteristicas {
+  .contenedor-planes .tabla3 .caracteristicas {
     text-align: center;
   }
-  .planes .tabla3 .precio {
+  .contenedor-planes .tabla3 .precio {
     padding-bottom: 0px;
   }
-  .planes .tabla3 .precio button {
+  .contenedor-planes .tabla3 .precio button {
     height: 70%;
     width: 60%;
     margin-bottom: 20px;

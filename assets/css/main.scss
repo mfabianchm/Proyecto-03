@@ -31,7 +31,7 @@ nav {
     width: 70px;
     height: 50px; 
   }
-  .nav-text {
+  .nav-texto {
       width: 70%;
       padding-left: 60px;
       display: flex;
@@ -102,7 +102,7 @@ nav {
     padding-left: 50px;
   }
 
-  .text-exp {
+  .texto-exp {
     width: 50%;
     height: 80%;
     padding-left: 60px;
@@ -132,7 +132,7 @@ nav {
 
 
 
-.header-planes {
+.titulo-planesyprecios {
   height: 100px;
   background-color: #03A9F4;
   display: flex;
@@ -140,9 +140,10 @@ nav {
   align-items: center;
   color: #FFFFFF;
   font-size: 40px;
+  margin: 0px;
 }
 
-.planes {
+.contenedor-planes {
   @include secciontab;
 }
 
@@ -150,7 +151,7 @@ nav {
 
 .tabla1 {
   @include tablas;
-  .header {
+  .plan-tipo {
     @include tabheader;
     
   }
@@ -178,7 +179,7 @@ nav {
 
 .tabla2 {
   @include tablas;
-  .header {
+  .plan-tipo {
     @include tabheader;
     
   }
@@ -206,7 +207,7 @@ nav {
 
 .tabla3 {
   @include tablas;
-  .header {
+  .plan-tipo {
     @include tabheader;
     
   }
@@ -231,7 +232,7 @@ nav {
 
 
 
-.contact-header {
+.titulo-contacto {
   height: 100px;
   background-color: #303F9F;
   display: flex;
@@ -239,10 +240,11 @@ nav {
   align-items: center;
   color: #FFFFFF;
   font-size: 35px;
+  margin: 0px;
 }
 
 
-.contacto {
+.contenedor-email-tel {
   background-color: $secondary-color;
   height: 400px;
   display: flex;
@@ -283,7 +285,7 @@ nav {
   
 }
 
-.datos {
+.datos-contacto {
 
   display: flex;
   flex-direction: row;
@@ -354,7 +356,7 @@ nav {
       height: 300px;
     }
 
-    .text-exp {
+    .texto-exp {
 
       padding-right: 20px;
       
@@ -402,7 +404,7 @@ p{
     height: 200px;
   }
 
-  .text-exp {
+  .texto-exp {
 
     padding-right: 20px;
     
@@ -464,7 +466,7 @@ p{
       padding-left: 0px;
     }
   
-    .text-exp {
+    .texto-exp {
   
       width: 70%;
       padding-left: 0px;
@@ -490,13 +492,13 @@ p{
     
   }
 
-  .planes {
+  .contenedor-planes {
     flex-direction: column;
     display: flex;
     height: 1500px;
   }
 
-  .contacto {
+  .contenedor-email-tel {
     .email-tel {
       input {
         width: 100%;
@@ -504,7 +506,7 @@ p{
     }
   }
 
-  .datos {
+  .datos-contacto {
     display: flex;
     flex-wrap: wrap;
     height: 450px;
@@ -524,7 +526,7 @@ p{
    ;
  }
 
- .nav-text {
+ .nav-texto {
    margin-left: -20px;
  }
   
@@ -541,7 +543,7 @@ p{
     ;
   }
  
-  .nav-text {
+  .nav-texto {
     flex-direction: column;
     text-align: center;
     padding-right: 60px;
@@ -613,7 +615,7 @@ p{
       padding-left: 0px;
     }
   
-    .text-exp {
+    .texto-exp {
   
       width: 70%;
       padding-left: 0px;
@@ -640,13 +642,13 @@ p{
     
   }
 
-  .planes {
+  .contenedor-planes {
     flex-direction: column;
     display: flex;
     height: 1500px;
   }
 
-  .contacto {
+  .contenedor-email-tel {
     .email-tel {
       width: 90%;
       input {
@@ -655,7 +657,7 @@ p{
     }
   }
 
-  .datos {
+  .datos-contacto {
     display: flex;
     flex-wrap: wrap;
     height: 450px;
@@ -665,7 +667,7 @@ p{
 
  @media (min-width: 320px) and (max-width: 435px) {
   
-  .planes {
+  .contenedor-planes {
     .tabla1 {
       width: 70%;
       height: 25%;
