@@ -1,0 +1,757 @@
+@import 'variables';
+@import 'mixins';
+ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+nav {
+    background-color: $secondary-color;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    
+    
+
+  
+  
+}
+
+
+nav {
+  img {
+    width: 70px;
+    height: 50px; 
+  }
+  .nav-texto {
+      width: 70%;
+      padding-left: 60px;
+      display: flex;
+      justify-content: space-around;
+
+     
+  }
+
+  a{
+      text-decoration: none;
+      color: $text-color;
+      font-weight: bold;
+      
+  }
+}
+
+
+.inicio {
+    @include secciones;
+    height: 700px;
+    align-items: center;
+
+    img{
+      
+      width: 35%;
+      height: 500px;
+      padding-right: 100px;
+    }
+
+    p {
+      @include parrafo;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+}
+
+
+
+.sobre-mi {
+
+  @include secciones($color: #303F9F);
+    height: 700px;
+    align-items: center;
+
+  img {
+    width: 50%;
+    height: 500px;
+    padding-left: 100px;
+  }
+
+  p {
+    @include parrafo;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+}
+
+
+.experiencia {
+  @include secciones($color: #9E9E9E);
+  height: 800px;
+  align-items: center;
+
+  iframe {
+    height: 400px;
+    width: 40%;
+    padding-left: 50px;
+  }
+
+  .texto-exp {
+    width: 50%;
+    height: 80%;
+    padding-left: 60px;
+    
+
+    h1 {
+      padding-bottom: 40px;
+      color: $text-color;
+      font-size: 50px;
+    }
+
+    p {
+      
+      color: $text-color;
+      padding-bottom: 80px;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      line-height: 1.5;
+      
+
+    }
+
+  
+  }
+}
+
+
+
+.titulo-planesyprecios {
+  height: 100px;
+  background-color: #03A9F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.contenedor-planes {
+  @include secciontab;
+}
+
+
+
+.tabla1 {
+  @include tablas;
+  .plan-tipo {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+
+.tabla2 {
+  @include tablas;
+  .plan-tipo {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+
+.tabla3 {
+  @include tablas;
+  .plan-tipo {
+    @include tabheader;
+    
+  }
+
+  .caracteristicas {
+    color: white;
+    p {
+      @include tabfeaturesp;
+      
+    }
+  }
+
+  .precio {
+    @include tabprecio;
+  
+
+     button {
+       @include tabpreciobutton;
+     }
+  }
+}
+
+
+
+.titulo-contacto {
+  height: 100px;
+  background-color: #303F9F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 35px;
+  margin: 0px;
+}
+
+
+.contenedor-email-tel {
+  background-color: $secondary-color;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+
+  .email-tel {
+
+    background-color: $secondary-color;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+
+  }
+
+
+
+  div {
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+  }
+
+   input {
+     
+     height: 30px;
+     border-radius: 10px;
+     border: none;
+     width: 70%;
+     align-self: center;
+     
+   }
+
+  
+}
+
+.datos-contacto {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+
+
+
+  .cuadro-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+    
+    img {
+      height: 40px;
+      width: 50px;
+      margin: 0 auto;
+
+      
+      
+    }
+
+    .facebook {
+      height: 40px;
+      width: 70px;
+    }
+
+    p {
+      font-weight: bold;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      color: black;
+    }
+
+    .pagina {
+       padding-bottom: 20px;
+    }
+
+
+  }
+
+  .cuadro-pag {
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 950px) and (max-width: 1024px) {
+  
+  .sobre-mi {
+    img {
+      height: 400px;
+      width: 40%;
+    }
+  }
+
+
+  .experiencia {
+    iframe {
+      height: 300px;
+    }
+
+    .texto-exp {
+
+      padding-right: 20px;
+      
+      p {
+        font-size: 17px;
+        text-align: justify;
+        padding-right: 20px;
+      }
+    }
+  }
+  
+}
+
+
+@media (min-width: 800px) and (max-width: 950px) {
+  
+.inicio {
+  p {
+   font-size: 30px;
+
+  }
+
+  img{
+
+    width: 40%;
+    height: 400px;
+
+  }
+}
+
+
+.sobre-mi {
+  img {
+    height: 250px;
+    width: 40%;
+  }
+}
+
+p{
+  font-size: 15px;
+}
+
+.experiencia {
+  iframe {
+    height: 200px;
+  }
+
+  .texto-exp {
+
+    padding-right: 20px;
+    
+    p {
+      font-size: 14px;
+      text-align: justify;
+      padding-right: 20px;
+    }
+  }
+}
+  
+}
+
+
+@media (min-width: 520px) and (max-width: 800px) {
+  
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    p {
+     font-size: 30px;
+  
+    }
+  
+    img{
+  
+      width: 50%;
+      height: 60%;
+      margin: 0 auto;
+      padding-right: 0px;
+      padding-bottom: 20px;
+  
+    }
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    img {
+      height: 250px;
+      width: 50%;
+      padding-left: 0px;
+      padding-top: 30px;
+    }
+  }
+
+  .experiencia {
+
+    display: flex;
+    flex-direction: column-reverse;
+    height: 1000px;
+    iframe {
+      height: 300px;
+      padding-bottom: 30px;
+      width: 70%;
+      margin-bottom: 40px;
+      padding-left: 0px;
+    }
+  
+    .texto-exp {
+  
+      width: 70%;
+      padding-left: 0px;
+      height: 70%;
+     
+
+      
+      p {
+        font-size: 16px;
+        text-align: justify;
+        padding-bottom: 0px;
+        padding-right: 0px;
+
+        
+      }
+
+      h1 {
+        padding-bottom: 0px;
+        text-align: center;
+      }
+    }
+
+    
+  }
+
+  .contenedor-planes {
+    flex-direction: column;
+    display: flex;
+    height: 1500px;
+  }
+
+  .contenedor-email-tel {
+    .email-tel {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .datos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+  }
+  
+}
+
+
+
+@media (min-width: 520px) and (max-width: 650px) {
+  
+ nav {
+   display: flex;
+   flex-direction: row;
+   height: 100px;
+   position: relative;
+   ;
+ }
+
+ .nav-texto {
+   margin-left: -20px;
+ }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 520px) {
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    ;
+  }
+ 
+  .nav-texto {
+    flex-direction: column;
+    text-align: center;
+    padding-right: 60px;
+    justify-content: space-around;
+    display: flex;
+    height: 70%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+
+    a{
+      border-bottom: 3px solid white;
+    }
+    
+
+  }
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    p {
+     font-size: 30px;
+
+  
+    }
+  
+    img{
+  
+      width: 70%;
+      height: 60%;
+      margin: 0 auto;
+      padding-right: 0px;
+      padding-bottom: 20px;
+  
+    }
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 1100px;
+    img {
+      height: 250px;
+      width: 80%;
+      padding-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      
+    }
+  }
+
+  .experiencia {
+
+    display: flex;
+    flex-direction: column-reverse;
+    height: 1200px;
+    iframe {
+      height: 20%;
+      padding-bottom: 20px;
+      width: 80%;
+      margin-bottom: 40px;
+      padding-left: 0px;
+    }
+  
+    .texto-exp {
+  
+      width: 70%;
+      padding-left: 0px;
+      height: 70%;
+     
+
+      
+      p {
+        font-size: 16px;
+        text-align: justify;
+        padding-bottom: 0px;
+        padding-right: 0px;
+
+        
+      }
+
+      h1 {
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 35px;
+      }
+    }
+
+    
+  }
+
+  .contenedor-planes {
+    flex-direction: column;
+    display: flex;
+    height: 1500px;
+  }
+
+  .contenedor-email-tel {
+    .email-tel {
+      width: 90%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .datos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+  }
+   
+ }
+
+ @media (min-width: 320px) and (max-width: 435px) {
+  
+  .contenedor-planes {
+    .tabla1 {
+      width: 70%;
+      height: 25%;
+      .caracteristicas {
+        text-align: center;
+      }
+       .precio {
+         padding-bottom: 0px;
+         
+         button {
+           height: 70%;
+           width: 60%;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+
+           
+         }
+       }
+    }
+    .tabla2 {
+      width: 70%;
+      height: 25%;
+      .caracteristicas {
+        text-align: center;
+      }
+       .precio {
+         padding-bottom: 0px;
+         
+         button {
+           height: 70%;
+           width: 60%;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+
+           
+         }
+       }
+    }
+    .tabla3 {
+      width: 70%;
+      height: 25%;
+      .caracteristicas {
+        text-align: center;
+      }
+       .precio {
+         padding-bottom: 0px;
+         
+         button {
+           height: 70%;
+           width: 60%;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+
+           
+         }
+       }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
